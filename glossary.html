@@ -601,9 +601,15 @@ Error message and password prompt
 
 <li>language learning through the eye and ear webcast</li>
 
+<li>List Questions</li>
+
+<li>List unfinished Questions</li>
+
 <li>Media</li>
 
 <li>metaphor-anger</li>
+
+<li>metaphor-anger-asl</li>
 
 <li>metaphor-love</li>
 
@@ -612,6 +618,10 @@ Error message and password prompt
 <li>Metaphors-An object Lesson</li>
 
 <li>Morphology</li>
+
+<li>Overview of all Questions</li>
+
+<li>Overview of unfinished Questions</li>
 
 <li>Phonological Processes</li>
 
@@ -623,6 +633,8 @@ Error message and password prompt
 
 <li>PRO-X</li>
 
+<li>Quiz.CSS</li>
+
 <li>S V</li>
 
 <li>segment</li>
@@ -631,7 +643,11 @@ Error message and password prompt
 
 <li>slow shift</li>
 
+<li>Spicing up the overview</li>
+
 <li>Stokoe Example</li>
+
+<li>Styling Questions</li>
 
 <li>symbol-example-cat</li>
 
@@ -656,6 +672,8 @@ Error message and password prompt
 <li>transcription</li>
 
 <li>two-of-us</li>
+
+<li>TYtweaks-Example: Quiz creation</li>
 
 <li>Valli et al. 2011</li>
 
@@ -10296,8 +10314,8 @@ Error message and password prompt
 <div created="20200622230343650" creator="TY" modified="20201120011035721" modifier="TY" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
-<div created="20200526054909688" creator="TY" modified="20201120022923074" modifier="TY" title="$:/state/sidebar">
-<pre>no</pre>
+<div created="20200526054909688" creator="TY" modified="20201120180756324" modifier="TY" title="$:/state/sidebar">
+<pre>yes</pre>
 </div>
 <div created="20201120000033423" creator="TY" modified="20201120000054423" modifier="TY" title="$:/state/tab--1289371166">
 <pre>$:/core/ui/TiddlerInfo/Advanced</pre>
@@ -10395,7 +10413,7 @@ Error message and password prompt
 <div created="20200306002322480" creator="T" modified="20200306002322759" modifier="T" title="$:/status/UserName">
 <pre>TY</pre>
 </div>
-<div created="20201120022734028" creator="TY" list="[[Metaphors-An object Lesson]] [[Metaphorical connections across domains of thought]] ASL-Metaphors ASL-Metaphors-Intro [[What are conceptual metaphors]] [[What do they do?]]" modified="20201120031357014" modifier="TY" title="$:/StoryList">
+<div created="20201120191651685" creator="TY" list="[[Styling Questions]] [[Overview of all Questions]] [[Overview of unfinished Questions]] [[Spicing up the overview]] [[Table of Contents]]" modified="20201120191933536" modifier="TY" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20201119235236840" creator="TY" list="$:/core/ui/Buttons/more-tiddler-actions $:/core/ui/Buttons/info $:/core/ui/Buttons/new-here $:/core/ui/Buttons/new-journal-here $:/core/ui/Buttons/clone $:/core/ui/Buttons/export-tiddler $:/core/ui/Buttons/edit $:/core/ui/Buttons/delete $:/core/ui/Buttons/permalink $:/core/ui/Buttons/permaview $:/core/ui/Buttons/open-window $:/core/ui/Buttons/close-others $:/core/ui/Buttons/fold-others $:/core/ui/Buttons/fold $:/core/ui/Buttons/fold-bar $:/core/ui/Buttons/close" modified="20201119235236840" modifier="TY" title="$:/tags/ViewToolbar">
@@ -11412,8 +11430,8 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div author="JeremyRuston" core-version="&gt;=5.0.0" created="20200523054402415" creator="TY" dependents="" description="Basic theme" modified="20200523054402415" modifier="TY" name="Vanilla" original-plugin-type="theme" original-tags="" original-title="$:/themes/tiddlywiki/vanilla" original-type="application/json" plugin-priority="0" requires-reload="no" server-url="https://tiddlywiki.com/library/v5.1.22/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.22/index.html/$:/themes/tiddlywiki/vanilla" type="text/vnd.tiddlywiki" version="5.1.22">
 <pre></pre>
 </div>
-<div created="20201108031307263" creator="TY" modified="20201120010437423" modifier="TY" title="$:/temp/search">
-<pre>metaphor</pre>
+<div created="20201108031307263" creator="TY" modified="20201120180507053" modifier="TY" title="$:/temp/search">
+<pre></pre>
 </div>
 <div created="20200523054402385" creator="TY" modified="20200523054402385" modifier="TY" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.22/index.html" url="https://tiddlywiki.com/library/v5.1.22/index.html">
 <pre>loaded</pre>
@@ -11991,6 +12009,31 @@ Language Learning Through the Eye and Ear. This Clerc Center-produced, research-
 *Describe the importance of joint attention, child-directed language and rich conversation with deaf and hard of hearing babies
 *Counter common but inaccurate assumptions surrounding dual language learning in deaf and hard of hearing children with research-supported data</pre>
 </div>
+<div created="20201120191745638" creator="TY" modified="20201120191859876" modifier="TY" title="List Questions">
+<pre>&lt;$list filter=&quot;[tag[Quiz]tags[]] -Quiz +[sort[title]]&quot;&gt;
+! &lt;$view field=&quot;title&quot;/&gt;
+&lt;$list filter=&quot;[is[current]tagging[]] +[tag[Quiz]] +[sort[title]]&quot;&gt;
+&lt;$link&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;
+&lt;/$list&gt;
+&lt;/$list&gt;</pre>
+</div>
+<div created="20201120191937170" creator="TY" modified="20201120191939645" modifier="TY" title="List unfinished Questions">
+<pre>The unfinished questiosn are also listed in our Overview. What if we could mark them there?
+
+In my real world task I put the language flags behind each of my questions in the overview. Let's here put an exclamation mark behind each question having an answer.
+
+```
+&lt;$list filter=&quot;[tag[Quiz]tags[]] -Quiz +[sort[title]]&quot;&gt;
+! &lt;$view field=&quot;title&quot;/&gt;
+&lt;$list filter=&quot;[is[current]tagging[]] +[tag[Quiz]] +[sort[title]]&quot;&gt;
+&lt;$link&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;
+&lt;$list filter=&quot;[is[current]search[@@.answer]]&quot;&gt; &lt;span class=&quot;flag answer&quot;/&gt;&lt;/$list&gt;
+&lt;/$list&gt;
+&lt;/$list&gt;
+```
+
+[[Take a look at the nicer Overview|Nicer Overview of all Questions]]</pre>
+</div>
 <div created="20201108091644506" creator="TY" modified="20201108091652185" modifier="TY" tags="[[Table of Contents]]" title="Media">
 <pre>&lt;div class=&quot;tc-table-of-contents&quot;&gt;
 
@@ -12000,6 +12043,9 @@ Language Learning Through the Eye and Ear. This Clerc Center-produced, research-
 </div>
 <div created="20201120014050859" creator="TY" modified="20201120015303134" modifier="TY" tags="ASL-Metaphors example-ASL example-ENG" title="metaphor-anger">
 <pre>&lt;iframe src=&quot;https://drive.google.com/file/d/1Hu76pzy-Fa3ro5gegvSofZDTYjUu-uXO/preview&quot; alt=&quot;iframe shows a head shot of an attractive young person with straight blond, shoulder length hair, presumably a woman. Most notably is a serious facial expression and an intense direct gaze. Digitally juxtaposed, on the image are two small plumes of steam from both ears. &quot;width=&quot;100%&quot; height=&quot;427&quot;&gt;&lt;/iframe&gt;</pre>
+</div>
+<div created="20201120040619506" creator="TY" modified="20201120040749743" modifier="TY" tags="ASL-Metaphors example-ASL" title="metaphor-anger-asl">
+<pre>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/edQa6L1mUh8&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;</pre>
 </div>
 <div created="20201119235312775" creator="TY" modified="20201120000022616" modifier="TY" tags="ASL-Metaphors example-ENG" title="metaphor-love" type="text/vnd.tiddlywiki">
 <pre>&lt;iframe src=&quot;https://drive.google.com/file/d/1HfjZjQSxMVV_0iOJ54Pa1E-aG7E7MADw/preview&quot; width=&quot;100%&quot; height=&quot;480px&quot;&gt;&lt;/iframe&gt;</pre>
@@ -12013,7 +12059,7 @@ cccCurrent
 
 </pre>
 </div>
-<div created="20201120015548828" creator="TY" modified="20201120031323128" modifier="TY" title="Metaphors-An object Lesson">
+<div created="20201120015548828" creator="TY" modified="20201120040832059" modifier="TY" title="Metaphors-An object Lesson">
 <pre>!An object lesson on Conceptual Metaphors
 
 {{metaphor-anger}}
@@ -12039,6 +12085,8 @@ Interestingly, we don't have a unique vocabulary for anger. Instead, we use a co
 *BLOW-TOP
 *PUSH-DOWN-ANGER
 
+{{metaphor-anger-asl}}
+
 When we analyze expressions related to anger, we see how we conceptualize the abstract feeling of anger in terms of more concrete things. We use aspects of an everyday item, a cooking pot, to understand, think about, and talk about the intensity and discomfort the emotion causes all of us. And we use the language of stuff to talk how it can occasionally be difficulty to contain rage, and we use the same phrases to teach each other the risks of sealing in too much anger without a proper way to &quot;//let off some steam//&quot;.  
 
 Metaphors allow us to take advantage of simple idealized cognitive models in order to conceptualize abstract ideas. An idealized cognitive model is the most basic, default way of thinking about things. Take the concept of a motherhood. The basic common meaning of the word //mom// is built on a simple model of a prototypical family. A man and a woman get married. They have a baby. The woman is the babies mother. As individuals and as a language communities, we layer additional meaning on top of the basic model. We learn to see affection and support as additional aspects of motherhood, we realize these aspects can exist in many situations other than the idealized cognitive model. However, the model still remains a tool we use in language and thought to categorize and compare ideas, and ultimately to organize our inner world of thought. 
@@ -12049,6 +12097,44 @@ Next, I will explain how we use aspects of idealized cognitive models to underst
 </div>
 <div created="20200616190326186" creator="TY" modified="20200617022301482" modifier="TY" tags="" title="Morphology">
 <pre>Connecting what you have learned about ASL to what linguists have learned about how ASL works.
+</pre>
+</div>
+<div created="20201120191711427" creator="TY" modified="20201120191717878" modifier="TY" title="Overview of all Questions">
+<pre>We have 2 tags for the tiddlers. All are tagged with &quot;Quiz&quot;. Additionally they have their source website as a tag.
+
+So it would be nice to have a list of all websites an a link to all their questions.
+
+Here TW5's widgets are required.
+
+```
+&lt;$list filter=&quot;[tag[Quiz]tags[]] -Quiz +[sort[title]]&quot;&gt;
+! &lt;$view field=&quot;title&quot;/&gt;
+&lt;$list filter=&quot;[is[current]tagging[]] +[tag[Quiz]] +[sort[title]]&quot;&gt;
+&lt;$link&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;
+&lt;/$list&gt;
+&lt;/$list&gt;
+```
+
+[[look at the Overview|List Questions]] then continue with [[Overview of unfinished Questions]]</pre>
+</div>
+<div created="20201120191907021" creator="TY" modified="20201120191909929" modifier="TY" title="Overview of unfinished Questions">
+<pre>In this example, we have all the answers as I &quot;borrowed&quot; the questions from existing quizzes. But let's assume we create our own questions and don't have all the answers yet.
+
+Wouldn't it be good to get a list of all questions missing an answer?
+
+Here we go:
+
+```
+&lt;$list filter=&quot;[tag[Quiz]!search[@@.answer]tags[]] -Quiz +[sort[title]]&quot;&gt;
+! &lt;$view field=&quot;title&quot;/&gt;
+&lt;$list filter=&quot;[is[current]tagging[]] +[tag[Quiz]!search[@@.answer]] +[sort[title]]&quot;&gt;
+&lt;$link&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;
+&lt;/$list&gt;
+&lt;/$list&gt;
+```
+
+[[Take a look at the unfinished Questions|List unfinished Questions]] then continue with [[Spicing up the overview]]
+
 </pre>
 </div>
 <div created="20201111184316340" creator="TY" modified="20201119232824113" modifier="TY" tags="Topics" title="Phonological Processes">
@@ -12114,6 +12200,36 @@ Earlier works of Liddell and Johnson called these short holds and designated the
 <div created="20200522160502533" creator="TY" modified="20200522160522654" modifier="TY" tags="" title="PRO-X">
 <pre>&lt;div style=&quot;width:100%;height:0;padding-bottom:56%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/3o7TKAjLmFPW3kDwR2&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&quot;https://giphy.com/gifs/signwithrobert-sign-with-robert-3o7TKAjLmFPW3kDwR2&quot;&gt;via GIPHY&lt;/a&gt;&lt;/p&gt;</pre>
 </div>
+<div created="20201120180509364" creator="TY" modified="20201120180742916" modifier="TY" tags="$:/tags/Stylesheet" title="Quiz.CSS" type="text/plain">
+<pre>/*
+   This will put a question mark, encoded in the &quot;letter-salad&quot; below, befor each question
+*/
+p.question:before {
+    content: url(&quot;data:image/gif;base64,R0lGODlhGgAmAIABAOIAAP///yH5BAEKAAEALAAAAAAaACYAAAJHjI+pywkN3YsRWEvb3Xlt3infFEpXKZ6oubLtob5B3NI1JtuoXvKh38G9gBnhjXSTGYxJJbHIPCpnz6mVEt1lf6DjNvi9ZgoAOw==&quot;) &quot; &quot;;
+}
+/*
+   This will put an exclamation mark, encoded in the &quot;letter-salad&quot; below, befor each question.
+   The explanation for the &quot;span&quot; is given in another tiddler…
+*/
+span.flag.answer:before,
+p.answer:before {
+    content: url(&quot;data:image/gif;base64,R0lGODlhFQAmAIABAOIAAP///yH5BAEKAAEALAAAAAAVACYAAAI2jI+py+0Po5y0LoCzzHrzyQHUB3alWJkeOmKp+1qqZwVwW994LLNj7gPVhkTiDEI6BZHHYqMAADs=&quot;) &quot; &quot;;
+}
+/*
+   Usually we don't want the answer to be shown at once. So we hide them in a grey bar.
+*/
+p.answer {
+    background-color: grey;
+    color: grey;
+}
+/*
+   But if the mouse points to it, it will be shown.
+*/
+p.answer:hover {
+    background-color: inherit;
+    color: inherit;
+}</pre>
+</div>
 <div created="20201108110920261" creator="TY" modified="20201117030751694" modifier="TY" tags="[[ASL Word Order]]" title="S V">
 <pre>!Subject Verb (SV)
 !!ASL word order for sentences with Intransitive Verbs
@@ -12159,8 +12275,36 @@ Effort is taken to slow the movement through antagonistic muscle movements. This
 &quot;...protracted S segment as a slow shift, abbreviated S:. Such slowed move-
 ment is common in ASL signs and often signals the protraction of an action when occurring in a verb or increased intensity when occurring in an adjectival predicate. As such, it is distinctive and must be described as a part of the phonetic system.&quot;</pre>
 </div>
+<div created="20201120193802390" creator="TY" modified="20201120193818006" modifier="TY" title="Spicing up the overview">
+<pre>The unfinished questiosn are also listed in our Overview. What if we could mark them there?
+
+In my real world task I put the language flags behind each of my questions in the overview. Let's here put an exclamation mark behind each question having an answer.
+
+```
+&lt;$list filter=&quot;[tag[Quiz]tags[]] -Quiz +[sort[title]]&quot;&gt;
+! &lt;$view field=&quot;title&quot;/&gt;
+&lt;$list filter=&quot;[is[current]tagging[]] +[tag[Quiz]] +[sort[title]]&quot;&gt;
+&lt;$link&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;
+&lt;$list filter=&quot;[is[current]search[@@.answer]]&quot;&gt; &lt;span class=&quot;flag answer&quot;/&gt;&lt;/$list&gt;
+&lt;/$list&gt;
+&lt;/$list&gt;
+```
+
+[[Take a look at the nicer Overview|Nicer Overview of all Questions]]</pre>
+</div>
 <div created="20200427065747163" creator="TY" modified="20201117005505519" modifier="TY" tags="phonology transcription Stokoe" title="Stokoe Example" type="image/svg+xml">
 <pre>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&lt;!-- Generator: Gravit.io --&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; style=&quot;isolation:isolate&quot; viewBox=&quot;0 0 144 87.75&quot; width=&quot;144pt&quot; height=&quot;87.75pt&quot;&gt;&lt;defs&gt;&lt;clipPath id=&quot;_clipPath_Ka02tIzyiqPAqwjXgSBSqsgTblf9aiCe&quot;&gt;&lt;rect width=&quot;144&quot; height=&quot;87.75&quot;/&gt;&lt;/clipPath&gt;&lt;/defs&gt;&lt;g clip-path=&quot;url(#_clipPath_Ka02tIzyiqPAqwjXgSBSqsgTblf9aiCe)&quot;&gt;&lt;text transform=&quot;matrix(1,0,0,1,0,64.844)&quot; style=&quot;font-family:'Andika';font-weight:400;font-size:48px;font-style:normal;fill:#000000;stroke:none;&quot;&gt;B  B  &lt;/text&gt;&lt;text transform=&quot;matrix(1,0,0,1,53,35.385)&quot; style=&quot;font-family:'Andika';font-weight:400;font-size:21px;font-style:normal;fill:#000000;stroke:none;&quot;&gt;'''&lt;/text&gt;&lt;text transform=&quot;matrix(1,0,0,1,28,65.815)&quot; style=&quot;font-family:'Open Sans';font-weight:400;font-size:30px;font-style:normal;fill:#000000;stroke:none;&quot;&gt;ɑ&lt;/text&gt;&lt;text transform=&quot;matrix(1,0,0,1,74,43.945)&quot; style=&quot;font-family:'Andika';font-weight:400;font-size:36px;font-style:normal;fill:#000000;stroke:none;&quot;&gt;×̇&lt;/text&gt;&lt;text transform=&quot;matrix(1,0,0,1,115,43.945)&quot; style=&quot;font-family:'Andika';font-weight:400;font-size:36px;font-style:normal;fill:#000000;stroke:none;&quot;&gt;×̇&lt;/text&gt;&lt;text transform=&quot;matrix(-1,0,0,-1,115,21.688)&quot; style=&quot;font-family:'Verdana';font-weight:400;font-size:32px;font-style:normal;fill:#000000;stroke:none;&quot;&gt;т&lt;/text&gt;&lt;/g&gt;&lt;/svg&gt;</pre>
+</div>
+<div created="20201120181143257" creator="TY" modified="20201120191618114" modifier="TY" tags="" title="Styling Questions">
+<pre>In order for the questions and answers not to look to boring, let's put a question mark in front of the questions and an exclamation mark in front of the answers. In my real task &quot;question&quot; and &quot;answer&quot; were in fact the 2 languages and I had flags where we now have question mark and exclamation mark.
+
+As we already did put @&amp;#64;.question and @&amp;#64;.answer around the 2 parts, we have some CSS classes assigned to the HTML elements. So it is now simply a matter of some trickfull CSS. See [[Quiz.CSS]].
+
+Example:
+
+{{Geography 01}}
+
+Next: [[Overview of all Questions]]</pre>
 </div>
 <div created="20200603032017801" creator="TY" modified="20201108092221139" modifier="TY" tags="symbol" title="symbol-example-cat" type="text/html">
 <pre>&lt;img src=&quot;https://docs.google.com/drawings/d/e/2PACX-1vQwDSLOJiVEwaMMpOKghGw7S7OM_PnxS-XHqoB8ZqIxXx58w9Yj4yOttFpEibqWvL2h8vDODrGCZ8MD/pub?w=397&amp;amp;h=336&quot;&gt;</pre>
@@ -12227,6 +12371,26 @@ Isotonic movement, caused by a thrusting movement without an attempt to slow the
 || t||
 |(1)| @@text-decoration:overline;POSS-1 DAUGHTER@@| PRO-DUAL-1^^&amp;rarr;Daughter^^|
 </pre>
+</div>
+<div created="20201120180935400" creator="TY" modified="20201120181015636" modifier="TY" tags="" title="TYtweaks-Example: Quiz creation">
+<pre>For a task at work, I had to take a questionaire, written in english and compare it to another questionaire written in german.
+
+So I first created one tiddler for each question and tagged it appropriately. I did this using a text editor ([[jEdit|http://jedit.org]]).
+
+Then I had to go through all questions and write a translation for it. Finally I had to check whether or not we have a similar question in our questionaire.
+
+For illustration purposes, I won't use my real world task, but use questions I found in free online quizzes.
+
+So let's assume we want to create a quiz. We have several questions taken from different websites and belonging into different categories.
+
+What I did put each question and answer into a tiddler using this form:
+
+|Field |Content |Example |h
+|title |//Category// //Question Number// |Geography 1 |
+|tags |Quiz //website// |&lt;span class=&quot;tw-tag-label&quot;&gt;Quiz&lt;/span&gt; &lt;span class=&quot;tw-tag-label&quot;&gt;readymadepubquiz.com&lt;/span&gt; |
+|text |@&amp;#64;.question&lt;br/&gt;//Question text//&lt;br/&gt;@&amp;#64;&lt;br/&gt;&lt;br/&gt;@&amp;#64;.answer&lt;br/&gt;//Answer text//&lt;br/&gt;@&amp;#64;&lt;br/&gt; |@&amp;#64;.question&lt;br/&gt;What is the name of the official national anthem of the USA?&lt;br/&gt;@&amp;#64;&lt;br/&gt;&lt;br/&gt;@&amp;#64;.answer&lt;br/&gt;The Star-Spangled Banner&lt;br/&gt;@&amp;#64;&lt;br/&gt; |
+
+Next: [[Styling the Questions]]</pre>
 </div>
 <div created="20201111190327259" creator="TY" modified="20201111191222726" modifier="TY" title="Valli et al. 2011">
 <pre>Valli, C., Lucas, C., Mulrooney, K. J., &amp; Villanueva, M. (2011).//Linguistics of American Sign Language: An Introduction// (5th ed., p. 579). [[Washington, DC: Gallaudet University Press|http://gupress.gallaudet.edu/bookpage/LASL5bookpage.html]].
